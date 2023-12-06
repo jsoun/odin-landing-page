@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100&display=swap");
 
-* {
+/* * {
   border: 1px dotted tomato;
-}
+} */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -19,7 +19,6 @@ button {
   cursor: pointer;
 }
 
-.container2-parent,
 .container3-parent,
 .container5-parent {
   margin: 0 100px;
@@ -44,13 +43,19 @@ button {
 }
 
 /* CONTAINER #2 CONTENTS */
+.container2-background {
+  background-color: #1f2937;
+}
+
 .container2-parent {
   display: flex;
-  justify-content: center;
+  padding: 100px 100px;
+  gap: 20px;
 }
 
 .container2-child {
   width: 50%;
+  color: #fff;
 }
 
 .container2-child2 {
@@ -65,7 +70,8 @@ button {
 }
 
 .awesome {
-  font-size: 24px;
+  font-size: 36px;
+  font-weight: 600;
 }
 
 .container2-child button {
@@ -74,6 +80,7 @@ button {
   border: none;
   color: #fff;
   padding: 5px 20px 5px 20px;
+  font-weight: bold;
 }
 
 .image {
@@ -98,12 +105,13 @@ button {
 /* CONTAINER #4 CONTENTS */
 .container4-parent {
   background-color: #e5e7eb;
+  padding: 100px 0;
 }
 
 .container4-child {
   /* display: flex; */
   /* flex-direction: column; */
-  margin: 20px 200px 20px 200px;
+  margin: 0 200px;
 }
 
 .quote {
