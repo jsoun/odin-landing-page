@@ -19,21 +19,21 @@ button {
   cursor: pointer;
 }
 
-.container3-parent,
+/* .container3-parent,
 .container5-parent {
   margin: 0 100px;
-}
+} */
 
 /* CONTAINER #1 CONTENTS */
 .container1-parent {
   background-color: #1f2937;
-  padding: 20px;
+  padding: 14px 0;
 }
 
 .container1-child {
   display: flex;
   justify-content: space-between;
-  margin: 0 100px 0 100px;
+  margin: 0 100px;
   color: #fff;
 }
 
@@ -49,7 +49,7 @@ button {
 
 .container2-parent {
   display: flex;
-  padding: 100px 100px;
+  padding: 50px 100px;
   gap: 20px;
 }
 
@@ -59,14 +59,12 @@ button {
 }
 
 .container2-child2 {
-  background-color: #e5e7eb;
-  width: 50%;
-}
-
-.container2-child2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: darkslategray;
+  color: #fff;
+  width: 50%;
 }
 
 .awesome {
@@ -79,8 +77,9 @@ button {
   border-radius: 5px;
   border: none;
   color: #fff;
-  padding: 5px 20px 5px 20px;
-  font-weight: bold;
+  padding: 8px 20px 8px 20px;
+  margin-top: 10px;
+  font-weight: 600;
 }
 
 .image {
@@ -89,13 +88,22 @@ button {
 }
 
 /* CONTAINER #3 CONTENTS */
+.container3-parent > div {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 0;
+}
+
 .container3-child {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
 }
 
 .box {
+  display: flex;
   margin: 10px;
   padding: 50px;
   border: 3px solid #3882f6;
@@ -109,8 +117,6 @@ button {
 }
 
 .container4-child {
-  /* display: flex; */
-  /* flex-direction: column; */
   margin: 0 200px;
 }
 
@@ -123,24 +129,24 @@ button {
 .author {
   display: flex;
   justify-content: flex-end;
-  padding-right: 20px;
-  font-weight: 800;
+  padding-right: 40px;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 /* CONTAINER #5 CONTENTS */
-.container5-child {
-  display: flex;
-  flex: 0;
-  margin: 20px 100px 20px 100px;
+.container5-background {
   background-color: #3882f6;
   box-shadow: 2px 4px 16px lightgray;
-  color: #fff;
-  border-radius: 5px;
   padding: 40px;
+  margin: 40px 140px;
+  border-radius: 5px;
 }
 
-.container5-parent div {
-  justify-content: space-evenly;
+.container5-parent {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
 }
 
 .container5-parent button {
@@ -152,6 +158,14 @@ button {
   color: #fff;
 }
 
+.container5-child {
+  color: #fff;
+}
+
+.container5-child > .text {
+  font-size: 20px;
+  font-weight: 600;
+}
 .footer {
   display: flex;
   justify-content: center;
