@@ -120,9 +120,6 @@ button {
 }
 
 /* CONTAINER #5 CONTENTS */
-.container5-parent {
-}
-
 .container5-child {
   display: flex;
   flex: 0;
