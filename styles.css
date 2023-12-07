@@ -19,10 +19,10 @@ button {
   cursor: pointer;
 }
 
-/* .container3-parent,
+.container3-parent,
 .container5-parent {
   margin: 0 100px;
-} */
+}
 
 /* CONTAINER #1 CONTENTS */
 .container1-parent {
@@ -32,6 +32,7 @@ button {
 
 .container1-child {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 100px;
   color: #fff;
@@ -50,7 +51,6 @@ button {
 .container2-parent {
   display: flex;
   padding: 50px 100px;
-  gap: 20px;
 }
 
 .container2-child {
@@ -67,45 +67,41 @@ button {
   width: 50%;
 }
 
-.awesome {
-  font-size: 36px;
-  font-weight: 600;
-}
-
 .container2-child button {
   background-color: #3882f6;
   border-radius: 5px;
   border: none;
   color: #fff;
   padding: 8px 20px 8px 20px;
-  margin-top: 10px;
   font-weight: 600;
-}
-
-.image {
-  display: flex;
-  align-items: center;
 }
 
 /* CONTAINER #3 CONTENTS */
-.container3-parent > div {
-  font-size: 24px;
-  font-weight: 600;
+.container3-header {
   text-align: center;
-  padding: 10px 0;
+  padding: 15px;
+}
+
+.container3-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 20px;
 }
 
 .container3-child {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
+  flex-basis: 0;
+  flex-direction: column;
+}
+
+.container3-child p {
+  text-align: center;
 }
 
 .box {
-  display: flex;
-  margin: 10px;
-  padding: 50px;
+  padding: 80px;
   border: 3px solid #3882f6;
   border-radius: 10px;
 }
@@ -113,11 +109,11 @@ button {
 /* CONTAINER #4 CONTENTS */
 .container4-parent {
   background-color: #e5e7eb;
-  padding: 100px 0;
+  padding: 40px 0;
 }
 
 .container4-child {
-  margin: 0 200px;
+  margin: 0 100px;
 }
 
 .quote {
@@ -137,14 +133,15 @@ button {
 /* CONTAINER #5 CONTENTS */
 .container5-background {
   background-color: #3882f6;
-  box-shadow: 2px 4px 16px lightgray;
+  box-shadow: 2px 4px 16px lightslategray;
   padding: 40px;
-  margin: 40px 140px;
+  margin: 40px 100px;
   border-radius: 5px;
 }
 
 .container5-parent {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 100px;
 }
@@ -166,7 +163,8 @@ button {
   font-size: 20px;
   font-weight: 600;
 }
-.footer {
+
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
